@@ -19,11 +19,12 @@ def arrayRandom():
 
 
 arr = arrayRandom()
+print(arrayRandom())
 array1 = copy.copy(arr)
 array2 = copy.copy(arr)
 array3 = copy.copy(arr)
 array4 = copy.copy(arr)
-
+print(array2)
 
 # quicksort
 def partition(array, p, r):
@@ -135,79 +136,79 @@ def bubbleSort(array):
             if array[j] > array[j + 1]:
                 array[j], array[j + 1] = array[j + 1], array[j]
     return array
-
-print("================Start==================\n")
-print("=======================================\n")
-
-# Bubble sort
-before_sort = array1
-#print(f"Before sort: {before_sort}\n")
-start_time_tree = time.time()
-bubbleSort(array1)
-#print(f"After sort with bubble sort: {array1} \n")
-print(f"{time.time() - start_time_tree} seconds with binary bubble sort\n")
-print("=======================================\n")
-
-# Quick sort
-before_sort = array2
-print(len(array2))
-#print(f"Before sort: {before_sort}\n")
-start_time = time.time()
-quicksort(array2)
-#print(f"After sort: {array2}\n")
-print(f"{time.time() - start_time} seconds with quick sort\n")
-print("=======================================\n")
-
-# Merge sort
-before_sort = array3
-#print(f"Before sort: {before_sort}\n")
-start_time_2 = time.time()
-merge_sort(array3)
-#print(f"After sort: {array3}\n")
-print(f"{time.time() - start_time_2} seconds with merge sort\n")
-print("=======================================\n")
-
-# Heap sort
-before_sort = array4
-#print(f"Before sort: {before_sort}\n")
-start_time_3 = time.time()
-heap_sort(array4)
-#print(f"After sort: {array4}\n")
-print(f"{time.time() - start_time_3} seconds with heap sort\n")
-print("=======================================\n")
-
-# # Buble sort
-# if __name__ == "__main__":
-#     p = ThreadPool(processes=8)
-#     # Bubble sort
-#     before_sort = array1
-#     print(f"Before sort: {before_sort}\n")
-#     start_time_tree = time.time()
-#     p.apply_async(bubbleSort, array1)
-#     print(f"After sort with bubble sort: {array1} \n")
-#     print(f"{time.time() - start_time_tree} seconds with binary bubble sort\n")
-#     # Quick sort
-#     before_sort = array2
-#     print(f"Before sort: {before_sort}\n")
-#     start_time = time.time()
-#     p.apply_async(quick_sort, (array2, 0, len(array2) - 1))
-#     print(f"After sort: {array2}\n")
-#     print(f"{time.time() - start_time} seconds with quick sort\n")
-#     print("=======================================\n")
 #
-#     # Merge sort
-#     before_sort = array3
-#     print(f"Before sort: {before_sort}\n")
-#     start_time_2 = time.time()
-#     p.apply_async(merge_sort, array3)
-#     print(f"After sort: {array3}\n")
-#     print(f"{time.time() - start_time_2} seconds with merge sort\n")
-#     print("=======================================\n")
+# print("================Start==================\n")
+# print("=======================================\n")
 #
-#     # Heap sort
-#     before_sort = array4
-#     print(f"Before sort: {before_sort}\n")
-#     start_time_3 = time.time()
-#     p.apply_async(heap_sort, array4)
-#     print(f"After sort: {array4}\n")
+# # Bubble sort
+# before_sort = array1
+# #print(f"Before sort: {before_sort}\n")
+# start_time_tree = time.time()
+# bubbleSort(array1)
+# #print(f"After sort with bubble sort: {array1} \n")
+# print(f"{time.time() - start_time_tree} seconds with binary bubble sort\n")
+# print("=======================================\n")
+#
+# # Quick sort
+# before_sort = array2
+# print(len(array2))
+# #print(f"Before sort: {before_sort}\n")
+# start_time = time.time()
+# quicksort(array2)
+# #print(f"After sort: {array2}\n")
+# print(f"{time.time() - start_time} seconds with quick sort\n")
+# print("=======================================\n")
+#
+# # Merge sort
+# before_sort = array3
+# #print(f"Before sort: {before_sort}\n")
+# start_time_2 = time.time()
+# merge_sort(array3)
+# #print(f"After sort: {array3}\n")
+# print(f"{time.time() - start_time_2} seconds with merge sort\n")
+# print("=======================================\n")
+#
+# # Heap sort
+# before_sort = array4
+# #print(f"Before sort: {before_sort}\n")
+# start_time_3 = time.time()
+# heap_sort(array4)
+# #print(f"After sort: {array4}\n")
+# print(f"{time.time() - start_time_3} seconds with heap sort\n")
+# print("=======================================\n")
+#
+# # # Buble sort
+# # if __name__ == "__main__":
+# #     p = ThreadPool(processes=8)
+# #     # Bubble sort
+# #     before_sort = array1
+# #     print(f"Before sort: {before_sort}\n")
+# #     start_time_tree = time.time()
+# #     p.apply_async(bubbleSort, array1)
+# #     print(f"After sort with bubble sort: {array1} \n")
+# #     print(f"{time.time() - start_time_tree} seconds with binary bubble sort\n")
+# #     # Quick sort
+# #     before_sort = array2
+# #     print(f"Before sort: {before_sort}\n")
+# #     start_time = time.time()
+# #     p.apply_async(quick_sort, (array2, 0, len(array2) - 1))
+# #     print(f"After sort: {array2}\n")
+# #     print(f"{time.time() - start_time} seconds with quick sort\n")
+# #     print("=======================================\n")
+# #
+# #     # Merge sort
+# #     before_sort = array3
+# #     print(f"Before sort: {before_sort}\n")
+# #     start_time_2 = time.time()
+# #     p.apply_async(merge_sort, array3)
+# #     print(f"After sort: {array3}\n")
+# #     print(f"{time.time() - start_time_2} seconds with merge sort\n")
+# #     print("=======================================\n")
+# #
+# #     # Heap sort
+# #     before_sort = array4
+# #     print(f"Before sort: {before_sort}\n")
+# #     start_time_3 = time.time()
+# #     p.apply_async(heap_sort, array4)
+# #     print(f"After sort: {array4}\n")
 #     print(f"{time.time() - start_time_3} seconds with heap sort\n")
